@@ -15,7 +15,7 @@ syntax enable
 
 " Mac OS X clipboard sharing // not seeing any differences so this will be
 " disabled until something is figured out
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Configure backspace so that it acts as it should (deletes)
 set backspace=eol,start,indent
