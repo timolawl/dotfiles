@@ -86,6 +86,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'vim-syntastic/syntastic'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -107,6 +108,11 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_eslint_exec = '/usr/local/lib/node_modules/eslint/bin/eslint.js'
 let g:syntastic_sass_lint_exec = '/usr/local/lib/node_modules/sass-lint/bin/sass-lint.js'
+
+
+" if executable('node_modules/.bin//eslint')
+"   let b:syntastic_javascript_eslint_exec = '`npm bin`/eslint';
+" endif
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_sass_checkers = ['sass_lint']
